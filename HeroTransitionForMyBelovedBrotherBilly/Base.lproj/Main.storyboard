@@ -1,24 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eAX-7q-IQ0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="pnY-ck-2f6">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="eAX-7q-IQ0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VdK-f8-zKO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="DHc-WJ-d52" kind="relationship" relationship="rootViewController" id="Del-V8-Kne"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p1x-NX-sxG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-535" y="202"/>
+        </scene>
+        <!--Bu Title Bir Harika Dostum-->
+        <scene sceneID="VQc-hl-7gi">
+            <objects>
+                <viewController id="DHc-WJ-d52" customClass="ViewController" customModule="HeroTransitionForMyBelovedBrotherBilly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q3y-OO-Dpd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1f-o8-GdJ">
+                                <rect key="frame" x="24" y="112" width="366" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="Unm-QO-DGp"/>
+                                </constraints>
+                                <state key="normal" title="Go"/>
+                                <connections>
+                                    <segue destination="sHs-wF-Wan" kind="show" id="41C-du-Puv"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16048623" translatesAutoresizingMaskIntoConstraints="NO" id="vNe-ty-zSb">
+                                <rect key="frame" x="147" y="559" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="HLW-Xu-Xzu"/>
+                                    <constraint firstAttribute="height" constant="120" id="Pkc-SW-sRa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="16048623"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.79215686269999996" green="0.16862745100000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vNe-ty-zSb" firstAttribute="centerX" secondItem="3AN-uz-Vgb" secondAttribute="centerX" id="6Yf-cs-uqo"/>
+                            <constraint firstItem="E1f-o8-GdJ" firstAttribute="top" secondItem="3AN-uz-Vgb" secondAttribute="top" constant="24" id="b9R-RF-xAy"/>
+                            <constraint firstItem="3AN-uz-Vgb" firstAttribute="trailing" secondItem="E1f-o8-GdJ" secondAttribute="trailing" constant="24" id="i9J-g8-dlQ"/>
+                            <constraint firstItem="E1f-o8-GdJ" firstAttribute="leading" secondItem="3AN-uz-Vgb" secondAttribute="leading" constant="24" id="o1l-0Y-syw"/>
+                            <constraint firstItem="3AN-uz-Vgb" firstAttribute="bottom" secondItem="vNe-ty-zSb" secondAttribute="bottom" constant="183" id="w9K-7b-1PF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3AN-uz-Vgb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bu Title Bir Harika Dostum" id="WJa-Ac-rT6"/>
+                    <connections>
+                        <outlet property="greatCornholioImageView" destination="vNe-ty-zSb" id="eq9-DU-e4K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NeY-CR-5td" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318.84057971014494" y="201.5625"/>
+        </scene>
+        <!--Asıl Bu Title Harika Adamım-->
+        <scene sceneID="6hi-nf-wRI">
+            <objects>
+                <viewController title="Asıl Bu Title Harika Adamım" id="sHs-wF-Wan" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H1q-WM-e2P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16048623" translatesAutoresizingMaskIntoConstraints="NO" id="oKQ-qX-mD9">
+                                <rect key="frame" x="87" y="112" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="Irh-Ut-ppB"/>
+                                    <constraint firstAttribute="width" constant="240" id="Z1a-Zw-Qa0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="16048623"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="120"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.79215686269999996" green="0.16862745100000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oKQ-qX-mD9" firstAttribute="top" secondItem="6Rf-xc-cDh" secondAttribute="top" constant="24" id="NxP-Zx-Bao"/>
+                            <constraint firstItem="oKQ-qX-mD9" firstAttribute="centerX" secondItem="6Rf-xc-cDh" secondAttribute="centerX" id="Oh1-av-mfD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Rf-xc-cDh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hayır Bu Title Harika Adamım" id="qPL-qM-P42"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7P-aP-OzT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197" y="202"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="16048623" width="400" height="400"/>
+    </resources>
 </document>
