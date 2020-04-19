@@ -7,17 +7,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="pnY-ck-2f6">
             <objects>
-                <navigationController id="eAX-7q-IQ0" sceneMemberID="viewController">
+                <navigationController id="eAX-7q-IQ0" customClass="BaseNavigationController" customModule="HeroTransitionForMyBelovedBrotherBilly" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VdK-f8-zKO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="DHc-WJ-d52" kind="relationship" relationship="rootViewController" id="Del-V8-Kne"/>
                     </connections>
@@ -51,7 +48,6 @@
                                     <constraint firstAttribute="height" constant="120" id="Pkc-SW-sRa"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="16048623"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="60"/>
                                     </userDefinedRuntimeAttribute>
@@ -86,7 +82,7 @@
         <!--Asıl Bu Title Harika Adamım-->
         <scene sceneID="6hi-nf-wRI">
             <objects>
-                <viewController title="Asıl Bu Title Harika Adamım" id="sHs-wF-Wan" sceneMemberID="viewController">
+                <viewController title="Asıl Bu Title Harika Adamım" id="sHs-wF-Wan" customClass="ViewController2" customModule="HeroTransitionForMyBelovedBrotherBilly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H1q-WM-e2P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +94,6 @@
                                     <constraint firstAttribute="width" constant="240" id="Z1a-Zw-Qa0"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="16048623"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="120"/>
                                     </userDefinedRuntimeAttribute>
@@ -119,6 +114,9 @@
                         <viewLayoutGuide key="safeArea" id="6Rf-xc-cDh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hayır Bu Title Harika Adamım" id="qPL-qM-P42"/>
+                    <connections>
+                        <outlet property="imageView" destination="oKQ-qX-mD9" id="3rO-V5-v9h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7P-aP-OzT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
