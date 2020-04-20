@@ -44,8 +44,9 @@
                                     <action selector="goButtonAction:" destination="DHc-WJ-d52" eventType="touchUpInside" id="CId-nT-zfQ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16048623" translatesAutoresizingMaskIntoConstraints="NO" id="vNe-ty-zSb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vNe-ty-zSb">
                                 <rect key="frame" x="147" y="559" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.83529411764705885" green="1" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="HLW-Xu-Xzu"/>
                                     <constraint firstAttribute="height" constant="120" id="Pkc-SW-sRa"/>
@@ -139,7 +140,6 @@
                                     <constraint firstAttribute="height" constant="240" id="Znm-h4-2Oh"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="16048623"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="120"/>
                                     </userDefinedRuntimeAttribute>
@@ -202,6 +202,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="16048623"/>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
