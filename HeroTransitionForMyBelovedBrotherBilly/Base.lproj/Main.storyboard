@@ -41,7 +41,7 @@
                                 </constraints>
                                 <state key="normal" title="Go"/>
                                 <connections>
-                                    <segue destination="sHs-wF-Wan" kind="show" id="41C-du-Puv"/>
+                                    <action selector="goButtonAction:" destination="DHc-WJ-d52" eventType="touchUpInside" id="CId-nT-zfQ"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16048623" translatesAutoresizingMaskIntoConstraints="NO" id="vNe-ty-zSb">
@@ -92,7 +92,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16048623" translatesAutoresizingMaskIntoConstraints="NO" id="oKQ-qX-mD9">
-                                <rect key="frame" x="87" y="112" width="240" height="240"/>
+                                <rect key="frame" x="87" y="68" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="Irh-Ut-ppB"/>
                                     <constraint firstAttribute="width" constant="240" id="Z1a-Zw-Qa0"/>
@@ -123,6 +123,97 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p7P-aP-OzT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1197" y="202"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="ZOV-0Q-jFf">
+            <objects>
+                <viewController id="DNz-AQ-Kff" customClass="FirstViewController" customModule="HeroTransitionForMyBelovedBrotherBilly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AZ1-VX-JSf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16048623" translatesAutoresizingMaskIntoConstraints="NO" id="dAR-SV-41L">
+                                <rect key="frame" x="87" y="68" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="LAR-qC-KtH"/>
+                                    <constraint firstAttribute="height" constant="240" id="Znm-h4-2Oh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="16048623"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="120"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.79215686269999996" green="0.16862745100000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQe-4g-f3L">
+                                <rect key="frame" x="120" y="663" width="174" height="30"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissButtonAction:" destination="DNz-AQ-Kff" eventType="touchUpInside" id="eQU-rb-Bgy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SdA-8y-jYb" firstAttribute="trailing" secondItem="WQe-4g-f3L" secondAttribute="trailing" constant="120" id="6XV-XC-Fa1"/>
+                            <constraint firstItem="dAR-SV-41L" firstAttribute="centerX" secondItem="SdA-8y-jYb" secondAttribute="centerX" id="HZy-mD-QtJ"/>
+                            <constraint firstItem="WQe-4g-f3L" firstAttribute="leading" secondItem="SdA-8y-jYb" secondAttribute="leading" constant="120" id="MHO-9d-H0W"/>
+                            <constraint firstItem="SdA-8y-jYb" firstAttribute="bottom" secondItem="WQe-4g-f3L" secondAttribute="bottom" constant="120" id="Z3V-Hd-0CU"/>
+                            <constraint firstItem="dAR-SV-41L" firstAttribute="top" secondItem="SdA-8y-jYb" secondAttribute="top" constant="24" id="anu-hi-y80"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SdA-8y-jYb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="gFB-jn-inN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ME0-FT-RPz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162" y="1706"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="CEX-Pu-C0P">
+            <objects>
+                <viewController id="aLf-x7-IjP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fQv-Kr-98K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8Xz-gh-N5F"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="zaR-Gt-MkB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxG-tF-6iK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="1706"/>
+        </scene>
+        <!--Base Tab Bar View Controller-->
+        <scene sceneID="Bdk-Yn-XUN">
+            <objects>
+                <tabBarController storyboardIdentifier="baseTabBarViewController" id="yf4-Iq-tQa" customClass="BaseTabBarViewController" customModule="HeroTransitionForMyBelovedBrotherBilly" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ute-Xv-oG2"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OsE-gd-AC7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="DNz-AQ-Kff" kind="relationship" relationship="viewControllers" id="fGm-Q4-QNg"/>
+                        <segue destination="aLf-x7-IjP" kind="relationship" relationship="viewControllers" id="MAA-me-ZW0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sT-MX-UoG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="989"/>
         </scene>
     </scenes>
     <resources>

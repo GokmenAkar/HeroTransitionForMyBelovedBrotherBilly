@@ -15,6 +15,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    @IBAction func goButtonAction(_ sender: UIButton) {
+        let tbc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "baseTabBarViewController")
+        tbc.modalPresentationStyle = .fullScreen
+        present(tbc, animated: true, completion: nil)
+    }
+    
 }
 
 class DesignableView: UIView {
