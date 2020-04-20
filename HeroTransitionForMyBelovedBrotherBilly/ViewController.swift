@@ -14,11 +14,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        transitioningDelegate = nil 
     }
     @IBAction func goButtonAction(_ sender: UIButton) {
         let tbc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "baseTabBarViewController")
-        tbc.modalPresentationStyle = .fullScreen
-        present(tbc, animated: true, completion: nil)
+        tbc.heroModalAnimationType = .cover(direction: .up)
+
+        present(tbc, animated: true) {
+            tbc.heroModalAnimationType = .cover(direction: .down)
+        }
     }
     
 }

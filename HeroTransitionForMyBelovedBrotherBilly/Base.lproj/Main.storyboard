@@ -196,7 +196,7 @@
         <!--Base Tab Bar View Controller-->
         <scene sceneID="Bdk-Yn-XUN">
             <objects>
-                <tabBarController storyboardIdentifier="baseTabBarViewController" id="yf4-Iq-tQa" customClass="BaseTabBarViewController" customModule="HeroTransitionForMyBelovedBrotherBilly" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="baseTabBarViewController" modalPresentationStyle="fullScreen" id="yf4-Iq-tQa" customClass="BaseTabBarViewController" customModule="HeroTransitionForMyBelovedBrotherBilly" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Ute-Xv-oG2"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OsE-gd-AC7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
